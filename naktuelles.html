@@ -1,0 +1,182 @@
+<style type="text/css">
+    /* CSS für die Bildergallerie */
+    #minigalerie {
+        display: table;
+        border-spacing: 10px;
+    }
+
+    #minigalerie a {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    #minigalerie img {
+
+        transition: 1s;
+        -moz-transition: 1s;
+        -o-transition: 1s;
+        -webkit-transition: 1s;
+    }
+
+    #minigalerie img:target {
+        image-orientation: from-image;
+        width: 300px;
+        height: 400px;
+    }
+
+    #minigalerie img {
+        background-color: #ffffff;
+        padding: 5px;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        box-shadow: 0 0 7px rgba(100, 100, 100, 1);
+        -moz-box-shadow: 0 0 7px rgba(100, 100, 100, 1);
+        -webkit-box-shadow: 0 0 7px rgba(100, 100, 100, 1);
+    }
+
+    /* CSS für die Tabelle Rindenmulch */
+    tr.border_bottom td {
+        border-bottom: 1pt solid black;
+    }
+</style>
+<link href="ncss/aufklappbar.css" rel="stylesheet">
+<script type='text/javascript' src='njs/collapserunner.js'></script>
+
+<div class="container textcontainer">
+
+    <div>
+        <img src="nplakate/Vatertag2.jpg" style="max-width:40%; height:auto; display:block; margin:auto;" />
+    </div>
+    <div class="bs-collapser" id="obstbuchs">
+        <div class="panel-group" id="accordion1">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        <button data-parent="#accordion1"
+                            class="d-flex align-items-center justify-content-between btn btn-link collapsed"
+                            data-toggle="collapse" data-target="#collapseEins" aria-expanded="false"
+                            aria-controls="collapseEins">
+                            Obst und Buchs (zum
+                            &Ouml;ffnen bitte anklicken)<a href="ncontent/ObstBuchs.pdf" target="_blank">⭳ Als
+                                PDF-Datei herunterladen ⭳</a>
+                            <span class="fa-stack fa-sm">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="panel-collapse collapse" id="collapseEins">
+                    <div class="panel-body">
+                        <embed height="500" src="ncontent/ObstBuchs.pdf" type="application/pdf" width="690"></embed>
+                        <img src="nImages/obstbuchs/ObstBuchs1.jpg"
+                            style="width: 700px; margin-left: 10px; margin-top: 10px;" />
+                        <img src="nImages/obstbuchs/ObstBuchs2.jpg"
+                            style="width: 700px; margin-left: 10px; margin-top: 10px;" />
+                        <img src="nImages/obstbuchs/ObstBuchs3.jpg"
+                            style="width: 700px; margin-left: 10px; margin-top: 10px;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="bs-collapser" id="wasseruhrenpanel">
+        <div class="panel-group" id="accordion2">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        <button data-parent="#accordion2"
+                            class="d-flex align-items-center justify-content-between btn btn-link collapsed"
+                            data-toggle="collapse" data-target="#collapseZwei" aria-expanded="false"
+                            aria-controls="collapseZwei">
+                            Montage Wasseruhren
+                            (zum &Ouml;ffnen bitte anklicken)
+                            <span class="fa-stack fa-sm">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="panel-collapse collapse" id="collapseZwei">
+                    <div class="panel-body">
+                        <table bgcolor="#999999" border="0" cellpadding="0" cellspacing="8" width="100%">
+                            <thead>
+                                <tr bgcolor="#ffffff">
+                                    <th style="border-right: 1px solid #cdd0d4; padding:2px 10px;" width="50%">
+                                        Selbstmontage</th>
+                                    <th style="padding:0px 10px" width="50%">
+                                        Vereinsmontage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr bgcolor="#ffffff" class="border_bottom">
+                                    <td style="border-right: 1px solid #cdd0d4; padding:2px 10px;">
+                                        <div style="text-align: justify;">
+                                            Wer seine Wasseruhr selbst anbringt, muss diese nach Vorgabe des Vereins und
+                                            bis Freitag, 22. M&auml;rz 2019 montiert haben.<br />
+                                            Beispielbilder dazu im gro&szlig;en Schaukasten an der
+                                            Gastst&auml;tte.<br />
+                                            Bitte Folgendes beachten:</div>
+                                        <ul>
+                                            <li style="text-align: justify;">
+                                                das Standrohr darf nicht bewegt (gedreht) werden da dieses nur mittels
+                                                einer Verbindungsmuffe im Erdreich mit der Wasserleitung verbunden ist.
+                                                Geringste Bewegungen lassen diese undicht werden und Wasser kann
+                                                unbemerkt in den Boden versickern.</li>
+                                            <li style="text-align: justify;">
+                                                alle Zwischen- oder Entl&uuml;ftungventile in der Leitung m&uuml;ssen
+                                                entfernt oder mit Verschlusskappen geschlo&szlig;en werden!</li>
+                                        </ul>
+                                    </td>
+                                    <td style="padding: 2px 10px; text-align: justify;">
+                                        Die Montage der Wasseruhren f&uuml;r Gartler, die die Wasseruhren nicht selbst
+                                        anbringen, erfolgt zwischen dem 04. und dem 22. M&auml;rz 2019.<br />
+                                        Die betroffenen Gartler werden jeweils ca. zwei Tage vor der Montage telefonisch
+                                        benachrichtigt. Die Rechnung wird nach der Montage per Post versendet.<br />
+                                        Helfer gesucht! Wir suchen noch Helfer, die uns bei der Montage
+                                        unterst&uuml;tzen. Interessierte Gartler m&ouml;gen sich am Freitag, 01.
+                                        M&auml;rz ab 16.00 Uhr zur Absprache und Zeitplanung im B&uuml;ro melden.</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div id="minigalerie">
+                                            <a href="#b1"><img id="b1" src="Images/wasseruhr_montage/IMG_1793.JPG"
+                                                    width="125" /> </a> <a href="#b2"> <img id="b2"
+                                                    src="Images/wasseruhr_montage/IMG_1794.JPG" width="125" /> </a> <a
+                                                href="#b3"> <img id="b3" src="Images/wasseruhr_montage/IMG_1795.JPG"
+                                                    width="125" /> </a> <a href="#b4"> <img id="b4"
+                                                    src="Images/wasseruhr_montage/IMG_1796.JPG" width="125" /> </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div id="minigalerie">
+                                            <a href="#b5"><img id="b5" src="Images/wasseruhr_montage/IMG_1797.JPG"
+                                                    width="125" /> </a> <a href="#b6"> <img id="b6"
+                                                    src="Images/wasseruhr_montage/IMG_1798.JPG" width="125" /> </a> <a
+                                                href="#b7"> <img id="b7" src="Images/wasseruhr_montage/IMG_1799.JPG"
+                                                    width="125" /> </a> <a href="#b8"> <img id="b8"
+                                                    src="Images/wasseruhr_montage/IMG_1800.JPG" width="125" /> </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <br />
+    <div>
+        Pachtordnung
+        <p style="text-align: justify;">
+            Klicken Sie auf den folgenden Link um die Pachtordnung herunter zu laden:<br />
+            <a href="Content/Pachtordnung.pdf" target="_blank">⭳ Pachtordnung ⭳</a></p>
+    </div>
+</div>

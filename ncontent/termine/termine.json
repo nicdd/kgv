@@ -1,0 +1,127 @@
+[
+    {
+        "groupId": "SprechstundenId",
+        "title": "Sprechstunde",
+        "start": "2019-01-25T16:00:00+02:00",
+        "end": "2019-01-25T18:00:00+02:00"
+    },
+    {
+        "groupId": "SprechstundenId",
+        "title": "Sprechstunde",
+        "start": "2019-02-22T16:00:00+02:00",
+        "end": "2019-02-22T18:00:00+02:00"
+    },
+    {
+        "groupId": "SprechstundenId",
+        "title": "Sprechstunde",
+        "start": "2019-03-29T16:00:00+02:00",
+        "end": "2019-03-29T18:00:00+02:00"
+    },
+    {
+        "groupId": "SprechstundenId",
+        "title": "Sprechstunde",
+        "start": "2019-04-26T16:00:00+02:00",
+        "end": "2019-04-26T18:00:00+02:00"
+    },
+    {
+        "groupId": "SprechstundenId",
+        "title": "Sprechstunde",
+        "start": "2019-05-31T16:00:00+02:00",
+        "end": "2019-05-31T18:00:00+02:00"
+    },
+    {
+        "groupId": "SprechstundenId",
+        "title": "Sprechstunde",
+        "start": "2019-06-28T16:00:00+02:00",
+        "end": "2019-06-28T18:00:00+02:00"
+    },
+    {
+        "groupId": "SprechstundenId",
+        "title": "Sprechstunde",
+        "start": "2019-07-26T16:00:00+02:00",
+        "end": "2019-07-26T18:00:00+02:00"
+    },
+    {
+        "groupId": "SprechstundenId",
+        "title": "Sprechstunde",
+        "start": "2019-08-30T16:00:00+02:00",
+        "end": "2019-08-30T18:00:00+02:00"
+    },
+    {
+        "groupId": "SprechstundenId",
+        "title": "Sprechstunde",
+        "start": "2019-09-27T16:00:00+02:00",
+        "end": "2019-09-27T18:00:00+02:00"
+    },
+    {
+        "groupId": "SprechstundenId",
+        "title": "Sprechstunde",
+        "start": "2019-10-25T16:00:00+02:00",
+        "end": "2019-10-25T18:00:00+02:00"
+    },
+    {
+        "groupId": "SprechstundenId",
+        "title": "Sprechstunde",
+        "start": "2019-11-29T16:00:00+02:00",
+        "end": "2019-11-29T18:00:00+02:00"
+    },
+        
+    {   "groupId": "HaeckslerId",
+        "title": "Häcksler",
+        "start": "2019-04-04T10:00:00+02:00",
+        "end": "2019-04-07T10:00:00+02:00"
+    },
+    {   "groupId": "HaeckslerId",
+        "title": "Häcksler",
+        "start": "2019-07-11T10:00:00+02:00",
+        "end": "2019-07-14T10:00:00+02:00"
+    },
+    {   "groupId": "HaeckslerId",
+        "title": "Häcksler",
+        "start": "2019-10-10T10:00:00+02:00",
+        "end": "2019-10-13T10:00:00+02:00"
+    },
+    {
+        "title": "Generalversammlung",
+        "start": "2019-04-13T13:30:00+02:00",
+        "end": "2019-04-13T18:00:00+02:00"
+    },
+    {
+        "title": "Maibaumfest",
+        "start": "2019-05-01"
+        
+    },
+    {
+        "title": "Kinderbuchlesung 'Was geht im Beet?'",
+        "start": "2019-05-04"
+    },
+    {
+        
+        "title": "Vaterstagfeier",
+        "start": "2019-05-30"
+    },
+    {
+        "title": "Sommerfest",
+        "start": "2019-07-12T14:00:00+02:00",
+        "end": "2019-07-12T23:59:00+02:00"
+    },
+    {
+        "title": "Wiesnanstich",
+        "start": "2019-09-21T10:00:00+02:00",
+        "end": "2019-09-21T20:00:00+02:00"
+    },
+    {
+        "title": "Nikolausfeier",
+        "start": "2019-12-07T15:00:00+02:00",
+        "end": "2019-12-07T19:00:00+02:00"
+    },
+    {
+        "title": "Weihnachtsfeier",
+        "start": "2019-12-14T17:00:00+02:00",
+        "end": "2019-12-14T23:59:00+02:00"
+    },
+    {
+        "title": "Silvesterumtrunk",
+        "start": "2019-12-31T15:00:00+02:00"
+    }
+]

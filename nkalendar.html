@@ -1,0 +1,63 @@
+<link href="node_modules/@fullcalendar/core/main.min.css" rel="stylesheet">
+<link href="node_modules/@fullcalendar/daygrid/main.min.css" rel="stylesheet">
+<link href="node_modules/@fullcalendar/timegrid/main.min.css" rel="stylesheet">
+<link href="node_modules/@fullcalendar/list/main.min.css" rel="stylesheet">
+<script type='text/javascript' src='node_modules/@fullcalendar/core/locales/de.js'></script>
+<script type='text/javascript' src='node_modules/@fullcalendar/core/main.min.js'></script>
+<script type='text/javascript' src='node_modules/@fullcalendar/daygrid/main.min.js'></script>
+<script type='text/javascript' src='node_modules/@fullcalendar/timegrid/main.min.js'></script>
+<script type='text/javascript' src='node_modules/@fullcalendar/list/main.min.js'></script>
+<script>
+  $(function () {
+    let initialLocaleCode = 'de';
+    let calendarEl = document.getElementById('calendar');
+    let calendar = new FullCalendar.Calendar(calendarEl, {
+      plugins: ['interaction', 'dayGrid', 'timeGrid', 'list'],
+      header: {
+        // locale: 'de',
+        left: 'prev,next today',
+        center: 'title',
+        right: 'dayGridMonth,timeGridMonth,timeGridDay,listMonth'
+      },
+      locale: initialLocaleCode,
+      defaultView: 'listMonth',
+      buttonIcons: false, // show the prev/next text
+      weekNumbers: true,
+      navLinks: true, // can click day/week names to navigate views
+      editable: true,
+      eventLimit: true, // allow "more" link when too many events
+      events: 'ncontent/termine/termine.json'
+    });
+
+    calendar.render();
+
+    let element = document.getElementById('calendar');
+    if (element) {
+      new ResizeSensor(element, function () {
+        console.log('Changed to ' + element.clientWidth + "x" + element.clientHeight);
+        $mainContent = $("#guts"),
+          $pageWrap = $("#page-content-wrapper"),
+          baseHeight = 0;
+        $pageWrap.height($pageWrap.height());
+        baseHeight = $mainContent.height();
+        $pageWrap.animate({
+          height: baseHeight + "px"
+        });
+      });
+    }
+    
+  })
+</script>
+<style>
+  div#calendar {
+    animation-name: element-queries;
+    animation-duration: 1s;
+  }
+</style>
+
+
+
+<div class="container textcontainer">
+  <div id='calendar'></div>
+  
+</div>
