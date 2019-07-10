@@ -1,14 +1,17 @@
 $(function () {
 
     var newHash = "",
-        // $mheader = $('#header'),
-        $mainContent = $("#guts"),
+        $mheader = $('#header'),
         $pageWrap = $("#page-content-wrapper"),
+        $mainContent = $("#guts"),
+        $mfooter = $('#footer'),
+        $samtPage = $('html'),
         baseHeight = 0,
         $el;
 
+        
     $pageWrap.height($pageWrap.height());
-    baseHeight = $pageWrap.height() - $mainContent.height();
+    baseHeight = () => {return $samtPage.height() - $mheader.height() - $mfooter.height()};
 
     $("nav").delegate("a", "click", function () {
         window.location.hash = $(this).attr("href");
@@ -18,14 +21,16 @@ $(function () {
 
 
     $(window).bind('hashchange', function () {
-
+        // console.log('last heightdynamic html.height:' + $samtPage.height() + ' baseHeight:' + baseHeight())
+        // console.log('last heightdynamic header.height:' + $mheader.height() + ' footer.height:' + $mfooter.height())
+        // console.log('last heightdynamic $pageWrap.height:' + $pageWrap.height() + ' $mainContent:' + $mainContent.height())
         newHash = window.location.hash.substring(1);
         if (newHash) {
             $mainContent.fadeOut(200, function () {
                 $mainContent.hide().load(newHash, function () {
                     $mainContent.fadeIn(200, function () {
                         $pageWrap.animate({
-                            height: baseHeight + $mainContent.height() + "px"
+                            height: Math.max( baseHeight(), $mainContent.height()) + "px"
                         });
                     });
                     let vpwidth = $(window).width();
@@ -51,7 +56,11 @@ $(function () {
 
                 });
             });
+            
         };
+        // console.log('aktuell heightdynamic html.height:' + $samtPage.height() + ' baseHeight:' + baseHeight())
+        //     console.log('aktuell heightdynamic header.height:' + $mheader.height() + ' footer.height:' + $mfooter.height())
+        //     console.log('aktuell heightdynamic $pageWrap.height:' + $pageWrap.height() + ' $mainContent:' + $mainContent.height())
 
     });
 
